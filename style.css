@@ -1,20 +1,89 @@
-.color-purple{
-    color: #C53678;
+:root{
+    --primary: #238f51 !important;
+    --secondary: #f05d4d !important;
+    --tertiary: #fec126 !important;
+
+    --primary-dark: #1b6b3d !important;
+    --secondary-dark: #9c3c32 !important;
+    --tertiary-dark: #b0861c !important;
 }
 
-.color-orange{
-    color: #FF5841;
+.color-cv-primary{
+    color: var(--primary);
 }
 
-.bg-purple{
-    background-color: #C53678;
+.color-cv-secondary{
+    color: var(--secondary);
 }
 
-.bg-orange{
-    background-color: #FF5841;
+.color-cv-tertiary{
+    color: var(--tertiary);
+}
+
+.bg-cv-primary{
+    background-color: var(--primary);
+}
+
+.bg-cv-secondary{
+    background-color: var(--secondary);
+}
+
+.bg-cv-tertiary{
+    background-color: var(--tertiary);
+}
+
+.row-fullscreen{
+    height: 100vh;
 }
 
 #usr-logo{
     width: 50px;
     height: auto;
+}
+
+.navbar{
+    height: 100vh;
+}
+
+.nav-logo{
+    display: inline;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.nav-link{
+    color: white;
+    margin-top: 5px;
+}
+
+.nav-link:hover{
+    color: lightgrey;
+}
+
+#logo-h{
+    color: var(--secondary);
+}
+
+#logo-b{
+    color: var(--tertiary);
+}
+
+.nav-logo-link:hover{
+    text-decoration: none;
+}
+
+.nav-logo-link:hover #logo-h{
+    color: var(--secondary-dark);
+}
+
+.nav-logo-link:hover #logo-b{
+    color: var(--tertiary-dark);
+}
+
+.text-shadow{
+    text-shadow: 4px 4px 4px 4px rgba(0,0,0,.5)
+}
+
+.col-shadow{
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,.5);
 }
