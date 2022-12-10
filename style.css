@@ -1,0 +1,20 @@
+.color-purple{
+    color: #C53678;
+}
+
+.color-orange{
+    color: #FF5841;
+}
+
+.bg-purple{
+    background-color: #C53678;
+}
+
+.bg-orange{
+    background-color: #FF5841;
+}
+
+#usr-logo{
+    width: 50px;
+    height: auto;
+}
