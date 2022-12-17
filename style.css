@@ -1,11 +1,11 @@
 :root{
-    --primary: #238f51 !important;
-    --secondary: #f05d4d !important;
-    --tertiary: #fec126 !important;
+    --primary: #edf2f4 !important;
+    --secondary: #ef233c !important;
+    --tertiary: #8d99ae !important;
 
     --primary-dark: #1b6b3d !important;
-    --secondary-dark: #9c3c32 !important;
-    --tertiary-dark: #b0861c !important;
+    --secondary-dark: #d90429 !important;
+    --tertiary-dark: #2b2d42 !important;
 }
 
 .color-cv-primary{
@@ -36,28 +36,26 @@
     height: 100vh;
 }
 
-#usr-logo{
-    width: 50px;
-    height: auto;
-}
-
 .navbar{
     height: 100vh;
 }
 
 .nav-logo{
     display: inline;
-    font-size: 48px;
+    font-size: 128px;
     font-weight: bold;
 }
 
-.nav-link{
+.btn-nav{
     color: white;
     margin-top: 5px;
+    background-color: var(--secondary);
 }
 
-.nav-link:hover{
-    color: lightgrey;
+.btn-nav:hover{
+    text-decoration: none;
+    color: white;
+    background-color: var(--secondary-dark);
 }
 
 #logo-h{
@@ -86,4 +84,43 @@
 
 .col-shadow{
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,.5);
+}
+
+.col-nav{
+    resize: none !important;
+}
+
+.content{
+    height: 100vh;
+}
+
+.section-1-content{
+    font-size: 64px;
+    font-weight: bold;
+}
+
+.name::first-letter:nth-child(1){
+    color: red;
+}
+
+.name::first-letter:nth-child(2){
+    color: grey;
+}
+
+@media (max-width: 1455px) {
+    .nav-logo{
+        font-size: 96px;
+    }
+}
+
+@media (max-width: 1190px) {
+    .nav-logo{
+        font-size: 64px;
+    }
+}
+
+@media (max-width: 930px) {
+    .nav-logo{
+        font-size: 32px;
+    }
 }
