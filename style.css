@@ -52,7 +52,13 @@
     background-color: var(--secondary);
 }
 
-.btn-nav:hover{
+.btn-contact{
+    color: white;
+    margin-top: 5px;
+    height: 64px;
+}
+
+.btn-nav:hover, .btn-contact:hover{
     text-decoration: none;
     color: white;
     background-color: var(--secondary-dark);
@@ -94,8 +100,41 @@
     height: 100vh;
 }
 
+.full-name p{
+    display: inline-block;
+    font-size: 64px;
+    font-weight: bold;
+}
+
+#name::first-letter{
+    color: var(--secondary);
+}
+
+#surname::first-letter{
+    color: var(--tertiary);
+}
+
+.full-role p{
+    display: inline-block;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+#role-one{
+    color: var(--secondary);
+}
+
+#role-two{
+    color: var(--tertiary);
+}
+
 .section-1-content{
     font-size: 64px;
+    font-weight: bold;
+}
+
+.section-1-subcontent{
+    font-size: 48px;
     font-weight: bold;
 }
 
@@ -153,6 +192,10 @@
 .carousel-subtitle{
     font-weight: bold;
     font-size: 18px;
+}
+
+.media-links{
+    display: inline;
 }
 
 @media (max-width: 1455px) {

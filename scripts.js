@@ -31,3 +31,15 @@ $(document).ready(function () {
 $(document).ready(function () {
   $('.carousel').carousel()
 })
+
+function sendEmail() {
+  // Get the values of the subject and content fields
+  const subject = document.getElementById('subjectInput').value;
+  const body = document.getElementById('contentInput').value;
+
+  // Construct the mailto: URL with the subject and body
+  const url = `mailto:hub.bukowski@gmail.com?subject=${subject}&body=${body}`;
+
+  // Open the URL in a new window
+  window.open(url);
+}
