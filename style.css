@@ -112,6 +112,40 @@
     font-size: 18px;
 }
 
+.carousel-img{
+    width: 64em;
+    height: 36;
+}
+
+.carousel-item{
+    height: 100vh;
+}
+
+.carousel-text{
+    word-wrap: normal;
+}
+
+.carousel .carousel-indicators li {
+    background-color: var(--tertiary);
+}
+
+.carousel .carousel-indicators li:active {
+    background-color: var(--secondary);
+}
+
+.carousel .carousel-indicators li::selection {
+    background-color: var(--secondary);
+}
+
+.carousel-control-next, .carousel-control-prev {
+    filter: invert(100%);
+}
+
+.carousel-title, .carousel-table{
+    font-weight: bold;
+    font-size: 24px;
+}
+
 @media (max-width: 1455px) {
     .nav-logo{
         font-size: 96px;

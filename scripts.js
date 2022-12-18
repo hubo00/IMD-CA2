@@ -1,12 +1,3 @@
-jQuery(".nav-logo-link").hover(
-  function () {
-    jQuery(this).addClass("hover");
-  },
-  function () {
-    jQuery(this).removeClass("hover");
-  }
-);
-
 // Script which listens for scrolling events, and takes the user directly to the section
 $(document).ready(function () {
   var currentSection = 1;
@@ -36,3 +27,7 @@ $(document).ready(function () {
     }
   });
 });
+
+$(document).ready(function () {
+  $('.carousel').carousel()
+})
