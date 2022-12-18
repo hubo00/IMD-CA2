@@ -114,7 +114,7 @@
 
 .carousel-img{
     width: 64em;
-    height: 36;
+    height: 36em;
 }
 
 .carousel-item{
@@ -141,9 +141,18 @@
     filter: invert(100%);
 }
 
-.carousel-title, .carousel-table{
+.carousel-title{
     font-weight: bold;
     font-size: 24px;
+}
+
+.carousel-table{
+    font-size: 24px;
+}
+
+.carousel-subtitle{
+    font-weight: bold;
+    font-size: 18px;
 }
 
 @media (max-width: 1455px) {
