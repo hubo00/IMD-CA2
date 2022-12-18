@@ -96,10 +96,6 @@ nav{
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,.5);
 }
 
-.col-nav{
-    resize: none !important;
-}
-
 .content{
     height: 100vh;
 }
@@ -168,6 +164,10 @@ nav{
     word-wrap: normal;
 }
 
+.carousel-control-next, .carousel-control-prev {
+    filter: invert(100%);
+}
+
 .carousel-title{
     font-weight: bold;
     font-size: 24px;
@@ -184,6 +184,18 @@ nav{
 
 .media-links{
     display: inline;
+}
+
+#section-3{
+    margin-top: 5em;
+}
+
+#section-4{
+    margin-top: 5em;
+}
+
+#section-5{
+    margin-top: 5em;
 }
 
 @media (max-width: 1455px) {
