@@ -29,69 +29,66 @@
     <title>Hubert Bukowski</title>
   </head>
   <body>
-    <div class="container-fluid">
-      <!-- Modal for contact -->
-      <div
-        class="modal fade"
-        id="contactModal"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="contactModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="contactModalLabel">Contact Form</h5>
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <form>
-                <div class="form-group">
-                  <label for="subjectInput">Subject</label>
-                  <input type="text" class="form-control" id="subjectInput" />
-                </div>
-                <div class="form-group">
-                  <label for="contentInput">Content</label>
-                  <textarea
-                    class="form-control"
-                    id="contentInput"
-                    rows="3"
-                  ></textarea>
-                </div>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-dismiss="modal"
-              >
-                Close
-              </button>
-              <button
-                type="button"
-                class="btn btn-primary"
-                onclick="sendEmail()"
-              >
-                Save changes
-              </button>
-            </div>
+    <!-- Modal for contact -->
+    <div
+      class="modal fade"
+      id="contactModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="contactModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contactModalLabel">Contact Form</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="subjectInput">Subject</label>
+                <input type="text" class="form-control" id="subjectInput" />
+              </div>
+              <div class="form-group">
+                <label for="contentInput">Content</label>
+                <textarea
+                  class="form-control"
+                  id="contentInput"
+                  rows="3"
+                ></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary" onclick="sendEmail()">
+              Save changes
+            </button>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- Section One -->
-      <div class="row row-fullscreen" id="section-1">
-        <div class="col-12 col-md-2 col-shadow bg-cv-primary">
-          <nav class="navbar bg-cv-primary">
+    <!-- Main -->
+    <div class="col">
+      <div class="row">
+        <!-- Navbar -->
+        <div class="col-md-2 col-shadow bg-cv-primary">
+          <nav class="navbar sticky-top bg-cv-primary">
             <ul class="navbar-nav mx-auto">
               <li class="nav-item">
                 <a href="#section-1" class="nav-logo-link">
@@ -111,11 +108,14 @@
             </ul>
           </nav>
         </div>
-        <div class="col-12 col-md-10">
-          <div class="row content align-items-center">
+
+        <!-- Content -->
+        <div class="col-md-10">
+          <!-- Section 1 General -->
+          <div id="section-1" class="row content align-items-center">
             <div class="col">
               <div class="row">
-                <div class="col-2">
+                <div class="col-2 ml-auto">
                   <img
                     id="profile-img"
                     src="static/images/profile.jpg"
@@ -182,34 +182,9 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
 
-      <!-- Section Two -->
-      <div class="row row-fullscreen" id="section-2">
-        <div class="col-12 col-md-2 col-shadow bg-cv-primary">
-          <nav class="navbar bg-cv-primary">
-            <ul class="navbar-nav mx-auto">
-              <li class="nav-item">
-                <a href="#section-1" class="nav-logo-link">
-                  <p class="nav-logo text-shadow" id="logo-h">H</p>
-                  <p class="nav-logo text-shadow" id="logo-b">B</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="btn btn-nav nav-link" href="#section-2">Education</a>
-              </li>
-              <li class="nav-item">
-                <a class="btn btn-nav nav-link" href="#section-3">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="btn btn-nav nav-link" href="#section-4">Work</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="col-12 col-md-10">
-          <div class="row content align-items-center">
+          <!-- Section 2 Education -->
+          <div id="section-2" class="row content align-items-center">
             <div class="col">
               <p class="title d-flex justify-content-center">Education</p>
               <a href="grades.html">
@@ -242,56 +217,16 @@
               </a>
             </div>
           </div>
-        </div>
-      </div>
 
-      <!-- Section Three -->
-      <div class="row row-fullscreen" id="section-3">
-        <div class="col-12 col-md-2 col-shadow bg-cv-primary">
-          <nav class="navbar bg-cv-primary">
-            <ul class="navbar-nav mx-auto">
-              <li class="nav-item">
-                <a href="#section-1" class="nav-logo-link">
-                  <p class="nav-logo text-shadow" id="logo-h">H</p>
-                  <p class="nav-logo text-shadow" id="logo-b">B</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="btn btn-nav nav-link" href="#section-2">Education</a>
-              </li>
-              <li class="nav-item">
-                <a class="btn btn-nav nav-link" href="#section-3">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="btn btn-nav nav-link" href="#section-4">Work</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-
-        <div class="col-12 col-md-10">
-          <div class="row content align-items-center">
+          <!-- Section 3 Projects -->
+          <div id="section-3" class="row content align-items-center">
             <div class="col">
+              <p class="title d-flex justify-content-center">Projects</p>
               <div
                 id="carouselExampleIndicators"
                 class="carousel slide"
                 data-ride="carousel"
               >
-                <ol class="carousel-indicators">
-                  <li
-                    data-target="#carouselExampleIndicators"
-                    data-slide-to="0"
-                    class="active"
-                  ></li>
-                  <li
-                    data-target="#carouselExampleIndicators"
-                    data-slide-to="1"
-                  ></li>
-                  <li
-                    data-target="#carouselExampleIndicators"
-                    data-slide-to="2"
-                  ></li>
-                </ol>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <img
@@ -436,126 +371,104 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
 
-    <!-- Section Four -->
-    <div class="row row-fullscreen" id="section-4">
-      <div class="col-12 col-md-2 col-shadow bg-cv-primary">
-        <nav class="navbar bg-cv-primary">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-              <a href="#section-1" class="nav-logo-link">
-                <p class="nav-logo text-shadow" id="logo-h">H</p>
-                <p class="nav-logo text-shadow" id="logo-b">B</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="btn btn-nav nav-link" href="#section-2">Education</a>
-            </li>
-            <li class="nav-item">
-              <a class="btn btn-nav nav-link" href="#section-3">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="btn btn-nav nav-link" href="#section-4">Work</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div class="col-12 col-md-10">
-        <div class="row content align-items-center">
-          <div class="col">
-            <div
-              id="carouselExampleIndicators"
-              class="carousel slide"
-              data-ride="carousel"
-            >
-              <ol class="carousel-indicators">
-                <li
-                  data-target="#carouselExampleIndicators"
-                  data-slide-to="0"
-                  class="active"
-                ></li>
-              </ol>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img
-                    class="d-block carousel-img mx-auto"
-                    src="static/images/cp.png"
-                    alt="First slide"
-                  />
-                  <p class="text-center carousel-title">
-                    Colgate-Palmolive Support Services
-                  </p>
-                  <p class="text-center carousel-subtitle">
-                    Full-Stack Software Developer Intern
-                  </p>
-                  <p class="carousel-table text-center">
-                    Duties & Responsibilites
-                  </p>
-                  <table class="table">
-                    <tbody>
-                      <tr>
-                        <td class="text-center">Daily Developer Standups</td>
-                        <td class="text-center">Writing Core Backend Code</td>
-                        <td class="text-center">
-                          Working on Developer Stories
-                        </td>
-                        <td class="text-center">
-                          Organizing Monthly Charity Events
-                        </td>
-                        <td class="text-center">Hosting Developer Standups</td>
-                        <td class="text-center">
-                          Working With the Google Cloud Platform
-                        </td>
-                        <td class="text-center">
-                          Writing Documentation & Tests
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <p class="carousel-table text-center">
-                    Technologies & Tools Used
-                  </p>
-                  <table class="table">
-                    <tbody>
-                      <tr>
-                        <td class="text-center">Python</td>
-                        <td class="text-center">Django REST</td>
-                        <td class="text-center">JavaScript</td>
-                        <td class="text-center">ReactJS</td>
-                        <td class="text-center">PostgreSQL</td>
-                        <td class="text-center">Google Cloud Platform</td>
-                      </tr>
-                    </tbody>
-                  </table>
+          <!-- Section 4 Work -->
+          <div id="section-4" class="row content align-items-center">
+            <div class="col">
+              <p class="title d-flex justify-content-center">Work</p>
+              <div
+                id="carouselExampleIndicators"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <ol class="carousel-indicators">
+                  <li
+                    data-target="#carouselExampleIndicators"
+                    data-slide-to="0"
+                    class="active"
+                  ></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      class="d-block carousel-img mx-auto"
+                      src="static/images/cp.png"
+                      alt="First slide"
+                    />
+                    <p class="text-center carousel-title">
+                      Colgate-Palmolive Support Services
+                    </p>
+                    <p class="text-center carousel-subtitle">
+                      Full-Stack Software Developer Intern
+                    </p>
+                    <p class="carousel-table text-center">
+                      Duties & Responsibilites
+                    </p>
+                    <table class="table">
+                      <tbody>
+                        <tr>
+                          <td class="text-center">Daily Developer Standups</td>
+                          <td class="text-center">Writing Core Backend Code</td>
+                          <td class="text-center">
+                            Working on Developer Stories
+                          </td>
+                          <td class="text-center">
+                            Organizing Monthly Charity Events
+                          </td>
+                          <td class="text-center">
+                            Hosting Developer Standups
+                          </td>
+                          <td class="text-center">
+                            Working With the Google Cloud Platform
+                          </td>
+                          <td class="text-center">
+                            Writing Documentation & Tests
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <p class="carousel-table text-center">
+                      Technologies & Tools Used
+                    </p>
+                    <table class="table">
+                      <tbody>
+                        <tr>
+                          <td class="text-center">Python</td>
+                          <td class="text-center">Django REST</td>
+                          <td class="text-center">JavaScript</td>
+                          <td class="text-center">ReactJS</td>
+                          <td class="text-center">PostgreSQL</td>
+                          <td class="text-center">Google Cloud Platform</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
+                <a
+                  class="carousel-control-prev"
+                  href="#carouselExampleIndicators"
+                  role="button"
+                  data-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a
+                  class="carousel-control-next"
+                  href="#carouselExampleIndicators"
+                  role="button"
+                  data-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="sr-only">Next</span>
+                </a>
               </div>
-              <a
-                class="carousel-control-prev"
-                href="#carouselExampleIndicators"
-                role="button"
-                data-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a
-                class="carousel-control-next"
-                href="#carouselExampleIndicators"
-                role="button"
-                data-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="sr-only">Next</span>
-              </a>
             </div>
           </div>
         </div>

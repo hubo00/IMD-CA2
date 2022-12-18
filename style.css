@@ -40,6 +40,10 @@
     height: 100vh;
 }
 
+nav{
+    position: sticky;
+}
+
 .nav-logo{
     display: inline;
     font-size: 128px;
@@ -162,22 +166,6 @@
 
 .carousel-text{
     word-wrap: normal;
-}
-
-.carousel .carousel-indicators li {
-    background-color: var(--tertiary);
-}
-
-.carousel .carousel-indicators li:active {
-    background-color: var(--secondary);
-}
-
-.carousel .carousel-indicators li::selection {
-    background-color: var(--secondary);
-}
-
-.carousel-control-next, .carousel-control-prev {
-    filter: invert(100%);
 }
 
 .carousel-title{
