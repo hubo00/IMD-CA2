@@ -198,6 +198,11 @@ nav{
     margin-top: 5em;
 }
 
+.hobby-title{
+    font-size: 24px;
+    font-weight: bold;
+}
+
 @media (max-width: 1455px) {
     .nav-logo{
         font-size: 96px;
